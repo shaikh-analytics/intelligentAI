@@ -1,0 +1,1648 @@
+{% extends "base.html" %}
+{% load static%}
+{% block title %}IntelligentAI{% endblock %}
+
+{% block content %}
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div class="hero-background">
+        <img src="{% static 'assets/img/bg/bg-14.webp'%}" alt="" data-aos-duration="1000">
+        <div class="overlay"></div>
+      </div>
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <span class="hero-badge">Innovative Solutions</span>
+              <h1>Empower Your Business with Intelligent AI Solutions</h1>
+              <p>Leverage cutting-edge artificial intelligence to streamline operations, boost efficiency, and drive smarter decisions across your organization.</p>
+              <div class="hero-actions">
+                <a href="#services" class="btn-primary">Explore Services</a>
+                <a href="https://www.youtube.com/watch?v=9xAyk4iaPbw" class="btn-secondary glightbox">
+                  <i class="bi bi-play-circle"></i>
+                  <span>Watch Demo</span>
+                </a>
+              </div>
+              <div class="hero-stats">
+                <div class="stat-item">
+                  <span class="stat-number">500+</span>
+                  <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">98%</span>
+                  <span class="stat-label">Client Satisfaction</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">24/7</span>
+                  <span class="stat-label">Support Available</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-visual">
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="feature-card">
+                    <i class="bi bi-shield-check"></i>
+                    <span>Secure &amp; Reliable</span>
+                  </div>
+                  <div class="feature-card">
+                    <i class="bi bi-people"></i>
+                    <span>Expert Team</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="feature-card">
+                    <i class="bi bi-speedometer2"></i>
+                    <span>High Performance</span>
+                  </div>
+                  <div class="feature-card">
+                    <i class="bi bi-award"></i>
+                    <span>Award Winning</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="content">
+              <h2>Building Brainy Tech (and Having a Blast) Since 2015</h2>
+              <p class="lead">At IntelligentAI, we don’t just write code — we craft clever digital experiences that make businesses go, “Whoa, how did we ever live without this?”</p>
+              <p>Back in 2015, we kicked things off with a wild dream, a few laptops, and way too much caffeine. Our mission? Blend futuristic tech with human-first thinking to solve real-world problems — and maybe have a little fun while we’re at it.</p>
+              <p>Fast forward to today, and we’re proud to be the secret weapon behind hundreds of companies that wanted more than just “another software solution.” They wanted innovation, speed, personality — and results that actually matter. We deliver all that, plus bad jokes and good vibes (free of charge).</p>
+              <div class="stats-container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="stat-item">
+                      <div class="number">8+</div>
+                      <div class="label">Years Experience</div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="stat-item">
+                      <div class="number">45+</div>
+                      <div class="label">Projects Completed</div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="stat-item">
+                      <div class="number">25</div>
+                      <div class="label">Team Members</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cta-wrapper">
+                <a href="#portfolio" class="btn btn-primary">Discover Our Work</a>
+                <a href="#team" class="btn btn-outline">Meet Our Team</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="image-wrapper">
+              <img src="{% static 'assets/img/about/about-square-8.webp'%}" alt="About Us" class="img-fluid main-image">
+              <div class="floating-card">
+                <div class="card-content">
+                  <i class="bi bi-award"></i>
+                  <div class="text">
+                    <h5>Excellence Award</h5>
+                    <span>Digital Innovation 2023</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+      <div>
+
+        <div class="clients-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 6000,
+              "autoplay": {
+                "delay": 1,
+                "disableOnInteraction": false
+              },
+              "centeredSlides": true,
+              "slideToClickedSlide": true,
+              "slidesPerView": "auto",
+              "spaceBetween": 40,
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 20
+                },
+                "640": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 20
+                },
+                "992": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 30
+                },
+                "1200": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 40
+                }
+              }
+            }
+          </script>
+
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="{% static 'assets/img/clients/clients-1.webp' %}" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="{% static 'assets/img/clients/clients-2.webp' %}" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="{% static 'assets/img/clients/clients-3.webp'%}" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="{% static 'assets/img/clients/clients-4.webp'%}" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="{% static 'assets/img/clients/clients-5.webp'%}" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="{% static 'assets/img/clients/clients-6.webp'%}" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="{% static 'assets/img/clients/clients-1.webp'%}" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="{% static 'assets/img/clients/clients-2.webp'%}" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="{% static 'assets/img/clients/clients-3.webp'%}" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="{% static 'assets/img/clients/clients-4.webp'%}" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="{% static 'assets/img/clients/clients-5.webp'%}" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="{% static 'assets/img/clients/clients-6.webp'%}" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Featured Services</h2>
+        <p>Featured Srvices</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="services-content" data-aos-duration="900">
+              <span class="subtitle">Professional Services</span>
+              <h2>Boosting Business Brains with Smart, Scalable Solutions</h2>
+              <p data-aos-duration="800">At IntelligentAI, we don’t just solve problems — we decode them, strategize around them, and turn them into powerful growth opportunities. Our AI-driven solutions are built to optimize performance, reduce friction, and keep your business two steps ahead.</p>
+              <div class="mt-4" data-aos-duration="1100">
+                <a href="#" class="btn-consultation"><span>Request a Consultation</span><i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="services-image">
+              <img src="{% static 'assets/img/services/services-9.webp'%}" alt="Business Services" class="img-fluid">
+              <div class="shape-circle"></div>
+              <div class="shape-accent"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5" data-aos-duration="1000">
+          <div class="col-12">
+            <div class="services-slider swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "slidesPerView": 3,
+                  "spaceBetween": 20,
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "navigation": {
+                    "nextEl": ".swiper-nav-next",
+                    "prevEl": ".swiper-nav-prev"
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1
+                    },
+                    "768": {
+                      "slidesPerView": 2
+                    },
+                    "992": {
+                      "slidesPerView": 3
+                    }
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="service-card">
+                    <div class="icon-box">
+                      <i class="bi bi-bar-chart-fill"></i>
+                    </div>
+                    <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
+                    <div class="content">
+                      <h4><a href="#">Financial Strategy Development</a></h4>
+                      <p>Smart growth starts with smart money moves. We craft data-backed financial strategies that align with your goals, minimize risk, and unlock long-term profitability — without the boring spreadsheets (okay, maybe just a few).</p>
+                      <div class="service-number">01</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="service-card">
+                    <div class="icon-box">
+                      <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+                    <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
+                    <div class="content">
+                      <h4><a href="#">Market Expansion Advisory</a></h4>
+                      <p>New markets, new opportunities — and way fewer guesswork moments. We help you break into the right markets with the right strategy, backed by deep insights, bold thinking, and zero fluff.</p>
+                      <div class="service-number">02</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="service-card">
+                    <div class="icon-box">
+                      <i class="bi bi-shield-check"></i>
+                    </div>
+                    <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
+                    <div class="content">
+                      <h4><a href="#">Risk Management Solutions</a></h4>
+                      <p>Business moves fast — risks move faster. Our smart, AI-driven solutions help you spot trouble before it hits, protect what matters, and keep your growth plans running full speed ahead.</p>
+                      <div class="service-number">03</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="service-card">
+                    <div class="icon-box">
+                      <i class="bi bi-lightbulb-fill"></i>
+                    </div>
+                    <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
+                    <div class="content">
+                      <h4><a href="#">Innovation &amp; Digital Transformation</a></h4>
+                      <p>Out with the outdated, in with the intelligent. We help businesses reinvent themselves with future-ready tech, bold ideas, and digital strategies that don’t just follow trends — they set them.</p>
+                      <div class="service-number">04</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="service-card">
+                    <div class="icon-box">
+                      <i class="bi bi-people-fill"></i>
+                    </div>
+                    <a href="#" class="arrow-link"><i class="bi bi-arrow-right"></i></a>
+                    <div class="content">
+                      <h4><a href="#">Talent Management Strategy</a></h4>
+                      <p>Find, grow, and keep the kind of talent that doesn’t just fill seats — but fuels innovation. Our strategy blends data-driven insights with a human-first approach to build teams that thrive, scale, and stay.</p>
+                      <div class="service-number">05</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="swiper-navigation">
+              <button class="swiper-nav-prev"><i class="bi bi-chevron-left"></i></button>
+              <button class="swiper-nav-next"><i class="bi bi-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Services Section -->
+
+    <!-- How We Work Section -->
+    <section id="how-we-work" class="how-we-work section">
+
+        <!-- Section Title -->
+        <div class="container section-title">
+          <h2>How We Work</h2>
+          <p>At IntelligentAI, we follow a structured yet innovative approach to transform ideas into intelligent software solutions.</p>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+          <div class="steps-grid">
+            <div class="step-card">
+              <div class="step-icon">
+                <i class="bi bi-search"></i>
+              </div>
+              <div class="step-number">Step 1</div>
+              <h3>Research &amp; Planning</h3>
+              <p>We begin with deep research and analysis, understanding your goals and challenges to design a clear, data-driven roadmap for success.</p>
+              <div class="step-arrow">
+                <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="step-card">
+              <div class="step-icon">
+                <i class="bi bi-lightbulb"></i>
+              </div>
+              <div class="step-number">Step 2</div>
+              <h3>Creative Solutions</h3>
+              <p>Our experts craft innovative strategies powered by AI and emerging technologies to deliver unique, scalable, and future-ready solutions.</p>
+              <div class="step-arrow">
+                <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="step-card">
+              <div class="step-icon">
+                <i class="bi bi-gear"></i>
+              </div>
+              <div class="step-number">Step 3</div>
+              <h3>Development</h3>
+              <p>With agile methodologies, we design, build, and integrate intelligent software that combines reliability, performance, and innovation.</p>
+              <div class="step-arrow">
+                <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="step-card">
+              <div class="step-icon">
+                <i class="bi bi-rocket-takeoff"></i>
+              </div>
+              <div class="step-number">Step 4</div>
+              <h3>Launch &amp; Support</h3>
+              <p>We ensure smooth deployment and provide continuous support to help your product grow, evolve, and succeed in the market.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </section><!-- /How We Work Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <div class="container">
+
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <ul class="nav nav-tabs flex-column" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#features-tab-1" role="tab">
+                  <div class="d-flex align-items-center">
+                    <div class="icon-box">
+                      <i class="bi bi-people"></i>
+                    </div>
+                    <div class="ms-3">
+                      <h4>AI Collaboration</h4>
+                      <p>Empowering teams with smarter tools</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2" role="tab">
+                  <div class="d-flex align-items-center">
+                    <div class="icon-box">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                    <div class="ms-3">
+                      <h4>User-Centric Design</h4>
+                      <p>Solutions built for real impact</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3" role="tab">
+                  <div class="d-flex align-items-center">
+                    <div class="icon-box">
+                      <i class="bi bi-house-heart"></i>
+                    </div>
+                    <div class="ms-3">
+                      <h4>Smart Integrations</h4>
+                      <p>Seamless fit into your ecosystem</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4" role="tab">
+                  <div class="d-flex align-items-center">
+                    <div class="icon-box">
+                      <i class="bi bi-person-heart"></i>
+                    </div>
+                    <div class="ms-3">
+                      <h4>Trusted Intelligence</h4>
+                      <p>Ethical and reliable AI adoption</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-5" role="tab">
+                  <div class="d-flex align-items-center">
+                    <div class="icon-box">
+                      <i class="bi bi-briefcase"></i>
+                    </div>
+                    <div class="ms-3">
+                      <h4>Enterprise Ready</h4>
+                      <p>Scalable AI for every business</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="tab-content">
+              <div class="tab-pane fade active show" id="features-tab-1" role="tabpanel">
+                <div class="content-box">
+                  <div class="row g-4">
+                    <div class="col-lg-6">
+                      <h3>Collaborative AI Solutions</h3>
+                      <p>We design AI platforms that bring teams, data, and processes together, enabling smarter decisions and faster outcomes for your business.</p>
+                      <p class="highlight">From brainstorming to execution, our tools amplify human creativity with intelligent automation.</p>
+                      <ul class="features-list">
+                        <li>
+                          <i class="bi bi-check2-circle"></i>
+                          <span>Real-time AI-assisted collaboration</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-check2-circle"></i>
+                          <span>Data-driven decision frameworks</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-check2-circle"></i>
+                          <span>Cross-platform team integration</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-check2-circle"></i>
+                          <span>Boost productivity with automation</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="image-box">
+                        <img src="{% static 'assets/img/misc/misc-square-6.webp'%}" alt="AI Collaboration" class="img-fluid" loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="features-tab-2" role="tabpanel">
+                <div class="content-box">
+                  <div class="row g-4">
+                    <div class="col-lg-6">
+                      <h3>User-Centric Innovation</h3>
+                      <p>Every solution we build is designed around the end-user experience, ensuring ease of use, accessibility, and measurable value.</p>
+                      <p class="highlight">Great technology is invisible—our designs let users focus on what matters most.</p>
+                      <ul class="features-list">
+                        <li>
+                          <i class="bi bi-check2-circle"></i>
+                          <span>Human-first design principles</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-check2-circle"></i>
+                          <span>AI that adapts to user needs</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-check2-circle"></i>
+                          <span>Seamless user experiences</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-check2-circle"></i>
+                          <span>Actionable insights in real time</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="image-box">
+                        <img src="{% static 'assets/img/misc/misc-square-13.webp'%}" alt="User Experience" class="img-fluid" loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="features-tab-3" role="tabpanel">
+                <div class="content-box">
+                  <div class="row g-4">
+                    <div class="col-lg-6">
+                      <h3>Seamless Integrations</h3>
+                      <p>Our AI solutions are built to integrate effortlessly with your existing tools, workflows, and platforms without disruption.</p>
+                      <p class="highlight">We make adoption smooth, so innovation feels natural within your ecosystem.</p>
+                      <ul class="features-list">
+                        <li>
+                          <i class="bi bi-check2-circle"></i>
+                          <span>Plug-and-play compatibility</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-check2-circle"></i>
+                          <span>API-first architecture</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-check2-circle"></i>
+                          <span>Secure cloud deployment</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-check2-circle"></i>
+                          <span>Enterprise system support</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="image-box">
+                        <img src="{% static 'assets/img/misc/misc-square-3.webp'%}" alt="Integrations" class="img-fluid" loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="features-tab-4" role="tabpanel">
+                <div class="content-box">
+                  <div class="row g-4">
+                    <div class="col-lg-6">
+                      <h3>Ethical AI You Can Trust</h3>
+                      <p>We prioritize fairness, transparency, and accountability in every AI solution, ensuring responsible and trustworthy adoption.</p>
+                      <p class="highlight">Your data security and ethical responsibility are at the heart of our development process.</p>
+                      <ul class="features-list">
+                        <li>
+                          <i class="bi bi-check2-circle"></i>
+                          <span>Bias-free AI modeling</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-check2-circle"></i>
+                          <span>Transparent algorithms</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-check2-circle"></i>
+                          <span>Privacy-first design</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-check2-circle"></i>
+                          <span>Compliance with global standards</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="image-box">
+                        <img src="{% static 'assets/img/misc/misc-square-5.webp'%}" alt="Ethical AI" class="img-fluid" loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="features-tab-5" role="tabpanel">
+                <div class="content-box">
+                  <div class="row g-4">
+                    <div class="col-lg-6">
+                      <h3>Enterprise-Ready AI</h3>
+                      <p>Our solutions are built for scale, offering reliable performance, flexibility, and support for organizations of all sizes.</p>
+                      <p class="highlight">From startups to global enterprises, IntelligentAI powers growth with scalable innovation.</p>
+                      <ul class="features-list">
+                        <li>
+                          <i class="bi bi-check2-circle"></i>
+                          <span>Enterprise-grade security</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-check2-circle"></i>
+                          <span>Cloud and on-premises options</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-check2-circle"></i>
+                          <span>Performance-driven AI systems</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-check2-circle"></i>
+                          <span>Scalable across industries</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="image-box">
+                        <img src="{% static 'assets/img/misc/misc-square-3.webp'%}" alt="Enterprise AI" class="img-fluid" loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- /Features Section -->
+
+    <!-- Expertise Section -->
+    <section id="services" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>EXPERTISE</h2>
+        <p>Discover Our Core Strengths</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 col-md-6">
+            <div class="service-card featured">
+              <div class="service-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <div class="service-content">
+                <h3><a href={% url 'service_detail' %}>Data Engineering</a></h3>
+                <p>We design and optimize modern data pipelines, ensuring clean, reliable, and scalable data architecture for smarter business decisions.</p>
+                <div class="service-meta">
+                  <span class="badge popular">Most Popular</span>
+                  <span class="price">Starting at $2,999</span>
+                </div>
+                <a href={% url 'service_detail' %} class="btn-cta">
+                  <span>Get Started</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+              <div class="service-bg"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-palette"></i>
+              </div>
+              <div class="service-content">
+                <h3><a href={% url 'service_detail' %}>Data Analytics</a></h3>
+                <p>Transforming raw data into actionable insights through advanced analytics, dashboards, and predictive intelligence for every business need.</p>
+                <div class="service-meta">
+                  <span class="price">Starting at $1,899</span>
+                </div>
+                <a href={% url 'service_detail' %} class="btn-cta">
+                  <span>Learn More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+              <div class="service-bg"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card compact">
+              <div class="service-icon">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <div class="service-content">
+                <h3><a href={% url 'service_detail' %}>Backend Development</a></h3>
+                <p>We build robust, scalable, and secure backend systems that power AI-driven applications and enterprise-grade solutions.</p>
+                <a href={% url 'service_detail' %} class="btn-cta">
+                  <span>Explore</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+              <div class="service-bg"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card compact">
+              <div class="service-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <div class="service-content">
+                <h3><a href={% url 'service_detail' %}>ETL Solutions</a></h3>
+                <p>Experts in Extract, Transform, Load (ETL) processes, delivering clean, structured, and business-ready data across systems.</p>
+                <a href={% url 'service_detail' %} class="btn-cta">
+                  <span>Discover</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+              <div class="service-bg"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card compact">
+              <div class="service-icon">
+                <i class="bi bi-cloud-upload"></i>
+              </div>
+              <div class="service-content">
+                <h3><a href={% url 'service_detail' %}>Cloud Services</a></h3>
+                <p>Deploy and scale with confidence—our cloud expertise spans AWS, Azure, and GCP, with secure and cost-efficient solutions.</p>
+                <a href={% url 'service_detail' %} class="btn-cta">
+                  <span>Get Quote</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+              <div class="service-bg"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="stats-highlight">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Projects Delivered</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Client Satisfaction</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Dedicated Support</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Years of Expertise</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Expertise Section -->
+
+    <!-- Plans Section -->
+    <section id="plans" class="pricing section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Our Plans</h2>
+        <p>Flexible engagement models designed to fit your business needs</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 justify-content-center">
+
+          <!-- Starter Package -->
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-item">
+              <div class="pricing-header">
+                <h3>Starter</h3>
+                <p>Best for small teams and early-stage startups</p>
+              </div>
+              <ul class="features-list">
+                <li><i class="bi bi-check2"></i> Initial Consultation & Roadmap</li>
+                <li><i class="bi bi-check2"></i> Basic Data Pipeline Setup</li>
+                <li><i class="bi bi-check2"></i> Limited Ongoing Support</li>
+              </ul>
+              <a href="#contact" class="btn-pricing">Get Started</a>
+            </div>
+          </div><!-- End Starter -->
+
+          <!-- Growth Package -->
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-item featured">
+              <div class="pricing-badge">Most Popular</div>
+              <div class="pricing-header">
+                <h3>Growth</h3>
+                <p>Designed for growing businesses ready to scale</p>
+              </div>
+              <ul class="features-list">
+                <li><i class="bi bi-check2"></i> Advanced Data Engineering & ETL</li>
+                <li><i class="bi bi-check2"></i> Cloud Optimization & Migration</li>
+                <li><i class="bi bi-check2"></i> Priority Support & Maintenance</li>
+              </ul>
+              <a href="#contact" class="btn-pricing">Choose Growth</a>
+            </div>
+          </div><!-- End Growth -->
+
+          <!-- Enterprise Package -->
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-item">
+              <div class="pricing-header">
+                <h3>Enterprise</h3>
+                <p>Tailored solutions for large-scale organizations</p>
+              </div>
+              <ul class="features-list">
+                <li><i class="bi bi-check2"></i> End-to-End AI & Data Solutions</li>
+                <li><i class="bi bi-check2"></i> Dedicated Experts & Consultants</li>
+                <li><i class="bi bi-check2"></i> 24/7 Enterprise-Level Support</li>
+              </ul>
+              <a href="#contact" class="btn-pricing">Contact Us</a>
+            </div>
+          </div><!-- End Enterprise -->
+
+        </div>
+
+        <!-- Extra CTA -->
+        <div class="pricing-cta text-center mt-5">
+          <h4>Looking for a custom plan?</h4>
+          <p>We also offer fully tailored solutions to match your unique business challenges.</p>
+          <a href="#contact" class="btn btn-primary">Request a Custom Quote</a>
+        </div>
+
+      </div>
+
+    </section><!-- /Plans Section -->
+    <!-- FAQ Section -->
+    <section id="faq" class="faq section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Frequently Asked Questions</h2>
+        <p>Answers to common queries about our services and expertise</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+
+            <div class="faq-wrapper">
+
+              <!-- Item 1 -->
+              <div class="faq-item faq-active">
+                <div class="faq-header">
+                  <div class="faq-icon">
+                    <i class="bi bi-question-circle"></i>
+                  </div>
+                  <h4>What industries do you specialize in?</h4>
+                  <div class="faq-toggle">
+                    <i class="bi bi-plus"></i>
+                    <i class="bi bi-dash"></i>
+                  </div>
+                </div>
+                <div class="faq-content">
+                  <div class="content-inner">
+                    <p>We work across multiple industries including finance, healthcare, retail, and technology. Our solutions are tailored to fit specific business requirements regardless of domain.</p>
+                  </div>
+                </div>
+              </div><!-- End FAQ Item -->
+
+              <!-- Item 2 -->
+              <div class="faq-item">
+                <div class="faq-header">
+                  <div class="faq-icon">
+                    <i class="bi bi-question-circle"></i>
+                  </div>
+                  <h4>Do you provide end-to-end solutions or only consulting?</h4>
+                  <div class="faq-toggle">
+                    <i class="bi bi-plus"></i>
+                    <i class="bi bi-dash"></i>
+                  </div>
+                </div>
+                <div class="faq-content">
+                  <div class="content-inner">
+                    <p>We offer both. Our team can provide strategic consulting, or deliver complete end-to-end solutions — from data engineering and cloud setup to AI model deployment and ongoing support.</p>
+                  </div>
+                </div>
+              </div><!-- End FAQ Item -->
+
+              <!-- Item 3 -->
+              <div class="faq-item">
+                <div class="faq-header">
+                  <div class="faq-icon">
+                    <i class="bi bi-question-circle"></i>
+                  </div>
+                  <h4>Can you integrate with our existing systems?</h4>
+                  <div class="faq-toggle">
+                    <i class="bi bi-plus"></i>
+                    <i class="bi bi-dash"></i>
+                  </div>
+                </div>
+                <div class="faq-content">
+                  <div class="content-inner">
+                    <p>Yes. We specialize in building solutions that seamlessly integrate with existing data warehouses, APIs, and enterprise applications while ensuring minimal disruption.</p>
+                  </div>
+                </div>
+              </div><!-- End FAQ Item -->
+
+              <!-- Item 4 -->
+              <div class="faq-item">
+                <div class="faq-header">
+                  <div class="faq-icon">
+                    <i class="bi bi-question-circle"></i>
+                  </div>
+                  <h4>What is your typical project timeline?</h4>
+                  <div class="faq-toggle">
+                    <i class="bi bi-plus"></i>
+                    <i class="bi bi-dash"></i>
+                  </div>
+                </div>
+                <div class="faq-content">
+                  <div class="content-inner">
+                    <p>Project timelines depend on complexity. Small POCs may take a few weeks, while large enterprise implementations can run over several months. We always define clear milestones up front.</p>
+                  </div>
+                </div>
+              </div><!-- End FAQ Item -->
+
+              <!-- Item 5 -->
+              <div class="faq-item">
+                <div class="faq-header">
+                  <div class="faq-icon">
+                    <i class="bi bi-question-circle"></i>
+                  </div>
+                  <h4>Do you offer post-project support and maintenance?</h4>
+                  <div class="faq-toggle">
+                    <i class="bi bi-plus"></i>
+                    <i class="bi bi-dash"></i>
+                  </div>
+                </div>
+                <div class="faq-content">
+                  <div class="content-inner">
+                    <p>Absolutely. We provide ongoing support, monitoring, and optimization to ensure your solutions continue delivering value as your business evolves.</p>
+                  </div>
+                </div>
+              </div><!-- End FAQ Item -->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /FAQ Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section light-background">
+
+      <div class="container">
+
+        <div class="cta-wrapper">
+          <div class="cta-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+          </div>
+
+          <div class="row g-0">
+            <div class="col-lg-7">
+              <div class="cta-content p-5">
+                <span class="badge-custom">Innovation That Matters</span>
+                <h2 class="mt-4 mb-4">Transform Your Business With IntelligentAI</h2>
+                <p class="mb-4">We empower organizations with cutting-edge AI-driven solutions that simplify processes, enhance decision-making, and accelerate growth. Experience the future of intelligent technology today.</p>
+
+                <div class="row benefits-row mb-5">
+                  <div class="col-md-6">
+                    <div class="benefit-item">
+                      <div class="icon-box">
+                        <i class="bi bi-lightning-charge-fill"></i>
+                      </div>
+                      <div class="benefit-content">
+                        <h5>Seamless Integration</h5>
+                        <p>Deploy AI solutions quickly with minimal disruption to your workflow.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="benefit-item">
+                      <div class="icon-box">
+                        <i class="bi bi-shield-check"></i>
+                      </div>
+                      <div class="benefit-content">
+                        <h5>Reliable & Secure</h5>
+                        <p>Built with enterprise-grade security to protect your data and operations.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="action-buttons">
+                  <a href="#" class="btn btn-primary">Get Started</a>
+                  <a href="#" class="btn btn-outline">Learn More</a>
+                  <div class="guarantee-badge">
+                    <i class="bi bi-patch-check-fill"></i>
+                    <span>Trusted by Businesses Worldwide</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="cta-image-container">
+                <img src="{% static 'assets/img/illustration/illustration-3.webp'%}" alt="Illustration" class="img-fluid main-image">
+                <div class="floating-element element-1">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4.9 Satisfaction Score</span>
+                </div>
+                <div class="floating-element element-2">
+                  <i class="bi bi-people-fill"></i>
+                  <span>10k+ Global Users</span>
+                </div>
+                <div class="pattern-dots"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <div class="container">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>IntelligentAI transformed the way our team works. Their AI-powered insights helped us optimize operations, cut down repetitive tasks, and unlock smarter decision-making across the board.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/person/person-m-9.webp'%}" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>CEO &amp; Founder</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>The IntelligentAI team brought innovation and clarity to our product design process. Their solutions made it easier to personalize user experiences and scale efficiently without compromising quality.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/person/person-f-5.webp' %}" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Product Designer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>We integrated IntelligentAI into our daily operations and saw immediate improvements. From data automation to predictive insights, their platform gave us the edge we needed to grow faster.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/person/person-f-12.webp'%}" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>As a freelancer, efficiency is everything. IntelligentAI helped me automate tedious tasks so I could focus on creativity and client relationships. It’s like having an extra team member working for me.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/person/person-m-12.webp'%}" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Partnering with IntelligentAI has been game-changing. Their platform simplified our workflows, improved team collaboration, and opened up new opportunities for business innovation and growth.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/person/person-m-13.webp'%}" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Our Work</h2>
+        <p>A showcase of IntelligentAI’s innovative projects that deliver real-world impact across industries.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center mt-4">
+              <ul class="portfolio-filters isotope-filters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-automation">Automation</li>
+                <li data-filter=".filter-analytics">Data & Analytics</li>
+                <li data-filter=".filter-ai">AI Solutions</li>
+                <li data-filter=".filter-apps">Custom Apps</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row gy-4 portfolio-container isotope-container">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-automation">
+              <div class="portfolio-wrap">
+                <img src="{% static 'assets/img/portfolio/portfolio-1.webp'%}" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                <div class="portfolio-info">
+                  <h4>Process Automation</h4>
+                  <p>Workflow Optimization</p>
+                  <div class="portfolio-links">
+                    <a href="{% static 'assets/img/portfolio/portfolio-1.webp'%}" class="glightbox" title="Process Automation"><i class="bi bi-zoom-in"></i></a>
+                    <a href="{% url 'home'%}" title="More Details"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-analytics">
+              <div class="portfolio-wrap">
+                <img src="{% static 'assets/img/portfolio/portfolio-2.webp'%}" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                <div class="portfolio-info">
+                  <h4>Predictive Insights</h4>
+                  <p>Data Analytics</p>
+                  <div class="portfolio-links">
+                    <a href="{% static 'assets/img/portfolio/portfolio-2.webp'%}" class="glightbox" title="Predictive Insights"><i class="bi bi-zoom-in"></i></a>
+                    <a href="{% url 'home'%}" title="More Details"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
+              <div class="portfolio-wrap">
+                <img src="{% static 'assets/img/portfolio/portfolio-3.webp'%}" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                <div class="portfolio-info">
+                  <h4>AI Chat Assistant</h4>
+                  <p>Conversational AI</p>
+                  <div class="portfolio-links">
+                    <a href="{% static 'assets/img/portfolio/portfolio-3.webp'%}" class="glightbox" title="AI Chat Assistant"><i class="bi bi-zoom-in"></i></a>
+                    <a href="{% url 'home'%}" title="More Details"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-apps">
+              <div class="portfolio-wrap">
+                <img src="{% static 'assets/img/portfolio/portfolio-4.webp'%}" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                <div class="portfolio-info">
+                  <h4>Custom Dashboard</h4>
+                  <p>Business Intelligence</p>
+                  <div class="portfolio-links">
+                    <a href="{% static 'assets/img/portfolio/portfolio-4.webp'%}" class="glightbox" title="Custom Dashboard"><i class="bi bi-zoom-in"></i></a>
+                    <a href="{% url 'home'%}" title="More Details"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-automation">
+              <div class="portfolio-wrap">
+                <img src="{% static 'assets/img/portfolio/portfolio-5.webp'%}" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                <div class="portfolio-info">
+                  <h4>Smart RPA Bots</h4>
+                  <p>Process Automation</p>
+                  <div class="portfolio-links">
+                    <a href="{% static 'assets/img/portfolio/portfolio-5.webp'%}" class="glightbox" title="Smart RPA Bots"><i class="bi bi-zoom-in"></i></a>
+                    <a href="{% url 'home'%}" title="More Details"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-analytics">
+              <div class="portfolio-wrap">
+                <img src="{% static 'assets/img/portfolio/portfolio-6.webp'%}" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                <div class="portfolio-info">
+                  <h4>Data Visualization</h4>
+                  <p>Analytics Platform</p>
+                  <div class="portfolio-links">
+                    <a href="{% static 'assets/img/portfolio/portfolio-6.webp'%}" class="glightbox" title="Data Visualization"><i class="bi bi-zoom-in"></i></a>
+                    <a href="{% url 'home'%}" title="More Details"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Team</h2>
+        <p>Meet the talented people who power our success</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="team-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 800,
+              "autoplay": { "delay": 5000 },
+              "slidesPerView": 1,
+              "spaceBetween": 30,
+              "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true },
+              "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" },
+              "breakpoints": {
+                "576": { "slidesPerView": 2 },
+                "992": { "slidesPerView": 3 },
+                "1200": { "slidesPerView": 4 }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <!-- Team Member 1 -->
+            <div class="swiper-slide">
+              <div class="team-card">
+                <div class="team-image">
+                  <img src="{% static 'assets/img/person/person-m-3.webp'%}" class="img-fluid" alt="Marcus Wilson - CTO" loading="lazy">
+                  <div class="team-overlay">
+                    <div class="social-links">
+                      <a href="#"><i class="bi bi-twitter-x"></i></a>
+                      <a href="#"><i class="bi bi-facebook"></i></a>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <h3>Marcus Wilson</h3>
+                  <span>Chief Technology Officer</span>
+                  <p>Expert in driving innovation and leading technology strategies to achieve business goals.</p>
+                </div>
+              </div>
+            </div><!-- End Team Member -->
+
+            <!-- Team Member 2 -->
+            <div class="swiper-slide">
+              <div class="team-card">
+                <div class="team-image">
+                  <img src="{% static 'assets/img/person/person-f-5.webp'%}" class="img-fluid" alt="Sophia Reynolds - Product Designer" loading="lazy">
+                  <div class="team-overlay">
+                    <div class="social-links">
+                      <a href="#"><i class="bi bi-twitter-x"></i></a>
+                      <a href="#"><i class="bi bi-facebook"></i></a>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <h3>Sophia Reynolds</h3>
+                  <span>Product Designer</span>
+                  <p>Focused on creating user-friendly designs and exceptional digital experiences.</p>
+                </div>
+              </div>
+            </div><!-- End Team Member -->
+
+            <!-- Team Member 3 -->
+            <div class="swiper-slide">
+              <div class="team-card">
+                <div class="team-image">
+                  <img src="{% static 'assets/img/person/person-m-8.webp'%}" class="img-fluid" alt="Daniel Chen - Marketing Specialist" loading="lazy">
+                  <div class="team-overlay">
+                    <div class="social-links">
+                      <a href="#"><i class="bi bi-twitter-x"></i></a>
+                      <a href="#"><i class="bi bi-facebook"></i></a>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <h3>Daniel Chen</h3>
+                  <span>Marketing Specialist</span>
+                  <p>Passionate about creating impactful marketing campaigns that drive results.</p>
+                </div>
+              </div>
+            </div><!-- End Team Member -->
+
+            <!-- Team Member 4 -->
+            <div class="swiper-slide">
+              <div class="team-card">
+                <div class="team-image">
+                  <img src="{% static 'assets/img/person/person-f-9.webp'%}" class="img-fluid" alt="Olivia Thompson - Lead Developer" loading="lazy">
+                  <div class="team-overlay">
+                    <div class="social-links">
+                      <a href="#"><i class="bi bi-twitter-x"></i></a>
+                      <a href="#"><i class="bi bi-facebook"></i></a>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <h3>Olivia Thompson</h3>
+                  <span>Lead Developer</span>
+                  <p>Building robust and scalable software solutions to solve real-world problems.</p>
+                </div>
+              </div>
+            </div><!-- End Team Member -->
+
+            <!-- Team Member 5 -->
+            <div class="swiper-slide">
+              <div class="team-card">
+                <div class="team-image">
+                  <img src="{% static 'assets/img/person/person-m-12.webp'%}" class="img-fluid" alt="Jason Parker - UI/UX Designer" loading="lazy">
+                  <div class="team-overlay">
+                    <div class="social-links">
+                      <a href="#"><i class="bi bi-twitter-x"></i></a>
+                      <a href="#"><i class="bi bi-facebook"></i></a>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <h3>Jason Parker</h3>
+                  <span>UI/UX Designer</span>
+                  <p>Designing intuitive user interfaces that ensure smooth and engaging experiences.</p>
+                </div>
+              </div>
+            </div><!-- End Team Member -->
+
+          </div><!-- End Swiper Wrapper -->
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+      </div>
+    </section>
+    <!-- /Team Section -->
+    <!-- contact Section -->
+    <section id="contact" class="contact section">
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Contact</h2>
+        <p>We’d love to hear from you. Reach out to us anytime for inquiries, collaborations, or support.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="contact-main-wrapper">
+          <div class="map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59002.02128222147!2d77.58240845148454!3d12.973555058454465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1756657490411!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="contact-content">
+            <div class="contact-cards-container">
+              <div class="contact-card">
+                <div class="icon-box">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Location</h4>
+                  <p>Indiranagar, Bengaluru, Karnataka, India</p>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>support@yourcompany.com</p>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="icon-box">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Call</h4>
+                  <p>+91 98765 43210</p>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="icon-box">
+                  <i class="bi bi-clock"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Open Hours</h4>
+                  <p>Monday - Friday: 9:00 AM – 6:00 PM</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-container">
+              <h3>Get in Touch</h3>
+              <p>Have a question or want to work together? Send us a message and we’ll get back to you as soon as possible.</p>
+
+              <form action="{% url 'home'%}" method="post" class="php-email-form">
+                {% csrf_token %}
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+
+                <div class="form-submit">
+                  <button type="submit">Send Message</button>
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Contact Section -->
+
+
+  </main>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Select all sliders with the custom config
+    document.querySelectorAll(".init-swiper").forEach(function (swiperEl) {
+      const configEl = swiperEl.querySelector(".swiper-config");
+      let config = {};
+      if (configEl) {
+        try {
+          config = JSON.parse(configEl.textContent);
+        } catch (e) {
+          console.error("Invalid swiper config JSON", e);
+        }
+      }
+      new Swiper(swiperEl, config);
+    });
+  });
+  document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('.faq-item .faq-header').forEach((header) => {
+    header.addEventListener('click', () => {
+      console.log("Clicked:", header);
+      const faqItem = header.closest('.faq-item');
+      faqItem.classList.toggle('faq-active');
+    });
+  });
+});
+
+</script>
+
+
+{% endblock %}
+

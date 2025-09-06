@@ -1,0 +1,229 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}IntelligentAI{% endblock %}
+{% block content %}
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" style="background-image: url({% static 'assets/img/bg/bg-14.webp' %});">
+      <div class="container position-relative">
+        <h1>Portfolio Details</h1>
+        <p>Discover how IntelligentAI delivers cutting-edge solutions that drive innovation, efficiency, and growth for enterprises worldwide.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{% static 'home' %}">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container">
+
+        <div class="project-header">
+          <div class="row">
+            <div class="col-lg-7">
+              <h1 class="project-title">AI-Powered Mobile Banking Platform</h1>
+              <div class="project-meta">
+                <div class="meta-item">
+                  <i class="bi bi-calendar3"></i>
+                  <span>June 2025</span>
+                </div>
+                <div class="meta-item">
+                  <i class="bi bi-building"></i>
+                  <span>FinTech Innovations Inc.</span>
+                </div>
+                <div class="meta-item">
+                  <i class="bi bi-link-45deg"></i>
+                  <a href="#" target="_blank">banking.intelligentai.com</a>
+                </div>
+              </div>
+              <div class="project-tags">
+                <span class="tag">AI</span>
+                <span class="tag">FinTech</span>
+                <span class="tag">Mobile App</span>
+              </div>
+            </div>
+            <div class="col-lg-5 d-flex align-items-center justify-content-end">
+              <div class="technologies">
+                <div class="tech-title">Technologies Used:</div>
+                <div class="tech-badges">
+                  <span>Python</span>
+                  <span>React Native</span>
+                  <span>TensorFlow</span>
+                  <span>AWS</span>
+                  <span>Docker</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image Showcase -->
+        <div class="media-showcase">
+          <div class="portfolio-details-slider swiper init-swiper swiper-fade">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 800,
+                "autoplay": { "delay": 5000 },
+                "effect": "fade",
+                "fadeEffect": { "crossFade": true },
+                "slidesPerView": 1,
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "clickable": true,
+                  "dynamicBullets": true
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/portfolio-1.webp' %}" alt="Portfolio Image" class="img-fluid">
+              </div>
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/portfolio-2.webp' %}" alt="Portfolio Image" class="img-fluid">
+              </div>
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/portfolio-3.webp' %}" alt="Portfolio Image" class="img-fluid">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <!-- Project Content -->
+        <div class="project-content">
+          <div class="row gy-4">
+            <div class="col-lg-7">
+              <div class="description-box">
+                <h3>Project Overview</h3>
+                <p class="lead">IntelligentAI developed a next-gen mobile banking platform powered by AI for personalized financial insights, fraud detection, and seamless customer engagement.</p>
+                <p>The solution leverages machine learning to analyze user behavior, predict spending patterns, and provide intelligent financial recommendations. Built with security-first architecture, it ensures compliance while delivering an intuitive customer experience.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="project-stats">
+                <div class="stat-item">
+                  <div class="stat-number">50k+</div>
+                  <div class="stat-label">Active Users</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">99%</div>
+                  <div class="stat-label">Client Satisfaction</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">8</div>
+                  <div class="stat-label">Months Development</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">4.9</div>
+                  <div class="stat-label">App Store Rating</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Challenge & Solution -->
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <div class="info-card">
+                <div class="card-icon">
+                  <i class="bi bi-lightbulb"></i>
+                </div>
+                <h4>The Challenge</h4>
+                <p>Traditional mobile banking lacked real-time intelligence and struggled with high fraud cases. Users demanded a more personalized and secure experience.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-card">
+                <div class="card-icon">
+                  <i class="bi bi-trophy"></i>
+                </div>
+                <h4>The Solution</h4>
+                <p>We integrated predictive analytics, biometric security, and AI-driven personalization. The result was a secure, scalable, and user-friendly platform that improved customer retention by 35%.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery -->
+          <div class="project-gallery">
+            <h3>Project Gallery</h3>
+            <div class="row g-3">
+              <div class="col-6 col-md-3">
+                <div class="gallery-item">
+                  <img src="{% static 'assets/img/portfolio/portfolio-9.webp'%}" alt="App Dashboard" class="img-fluid glightbox">
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="gallery-item">
+                  <img src="{% static 'assets/img/portfolio/portfolio-10.webp'%}" alt="AI Insights" class="img-fluid glightbox">
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="gallery-item">
+                  <img src="{% static 'assets/img/portfolio/portfolio-4.webp' %}" alt="Mobile Interface" class="img-fluid glightbox">
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="gallery-item">
+                  <img src="{% static 'assets/img/portfolio/portfolio-6.webp'%}" alt="Analytics Dashboard" class="img-fluid glightbox">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Features -->
+          <div class="key-features">
+            <h3>Key Features</h3>
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="feature-item">
+                  <i class="bi bi-shield-check"></i>
+                  <h5>Fraud Detection</h5>
+                  <p>AI-powered fraud detection system prevents unauthorized access in real-time.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="feature-item">
+                  <i class="bi bi-graph-up-arrow"></i>
+                  <h5>Predictive Analytics</h5>
+                  <p>Provides personalized financial insights and forecasts for customers.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="feature-item">
+                  <i class="bi bi-gear-wide-connected"></i>
+                  <h5>Seamless API Integration</h5>
+                  <p>Enables third-party services and fintech apps to connect securely.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <div class="project-navigation">
+            <a href="#" class="prev-project">
+              <i class="bi bi-arrow-left"></i>
+              <span>Previous Project</span>
+            </a>
+            <a href="#" class="all-projects">
+              <i class="bi bi-grid"></i>
+              <span>All Projects</span>
+            </a>
+            <a href="#" class="next-project">
+              <span>Next Project</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+{% endblock %}
