@@ -28,6 +28,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['intelligentai.onrender.com','*']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://intelligentai.onrender.com'
+]
+
 
 # Application definition
 
