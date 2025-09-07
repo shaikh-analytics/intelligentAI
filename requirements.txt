@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 django
-=======
-django
->>>>>>> 7ca3f9c (all)
